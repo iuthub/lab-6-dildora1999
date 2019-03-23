@@ -9,7 +9,9 @@ body {
     border: 10px #D8C858 solid;
     padding: 0.5em;
 }
-
+.center{
+    margin-left: 20%;
+}
 hr {
     width: 90%;
     border: 1px solid #D8C858;

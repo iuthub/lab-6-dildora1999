@@ -1,5 +1,13 @@
 <?php
-
+	/*
+	/quick/										
+	/[a-z0-9._\-%]+@[a-z]+\.[a-z]{2,4}/     	
+	/\+998-\d{2}-\d{3}-\d{2}-\d{2}/				
+	/\s/										
+	/[^0-9\.\,]/								
+	/\n/										
+	/\[.+\]/									
+*/
 	$pattern="";
 	$text="";
 	$replaceText="";
@@ -7,7 +15,7 @@
 
 	$match="Not checked yet.";
 
-if ($_SERVER["REQUEST_METHOD"]=="POST") {
+if ($_SERVER["REQUEST_METHOD"]=="POST"){
 	$pattern=$_POST["pattern"];
 	$text=$_POST["text"];
 	$replaceText=$_POST["replaceText"];
